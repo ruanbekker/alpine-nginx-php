@@ -36,4 +36,4 @@ ADD default.conf /etc/nginx/conf.d/default.conf
 ADD index.php /var/www/localhost/htdocs/index.php
 ADD nginx-supervisor.ini /etc/supervisor.d/nginx-supervisor.ini
 
-CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor.d/nginx-supervisor.ini"]
+CMD ["/bin/sh", "/boot.sh"]
